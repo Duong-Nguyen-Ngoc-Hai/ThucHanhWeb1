@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Thi Trắc Nghiệm</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .question-group {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    h1 {
+        margin-left: 450px;
+        color: red;
+    }
+    #userInfoForm {
+      margin-left: 450px;
+      width: 400px;
+      font-family: Arial, sans-serif;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hệ Thống Thi Trắc Nghiệm</h1>
+  
+  <!-- Form nhập thông tin người dùng -->
+  <form id="userInfoForm">
+    <label for="fullName">Họ và Tên:</label>
+    <input type="text" id="fullName" required>
+    
+    <label for="dob">Ngày Tháng Năm Sinh:</label>
+    <input type="date" id="dob" required>
+    
+    <label for="studentId">Mã Sinh Viên:</label>
+    <input type="text" id="studentId" required>
+    
+    <label for="class">Lớp:</label>
+    <input type="text" id="class" required>
+
+    <!-- Nút để hiển thị câu hỏi -->
+    <button type="submit" >Bắt đầu</button>
+  </form>
+
+  <!-- Khu vực hiển thị câu hỏi -->
+  <div id="questions" class="question-group" style="display: none;">
+    <!-- Câu hỏi 1 - Nhóm 1 -->
+    <div>
+        <h2>Phần 1:  Lựa chọn đúng /sai</h1>
+      <p>Câu 1: JavaScript là ngôn ngữ lập trình phổ biến.</p>
+      <label><input type="radio" name="group1.1" value="true"> Đúng</label>
+      <label><input type="radio" name="group1.1" value="false"> Sai</label>
+      <p>Câu 2: JavaScript là ngôn ngữ lập trình phổ biến.</p>
+      <label><input type="radio" name="group1.2" value="true"> Đúng</label>
+      <label><input type="radio" name="group1.2" value="false"> Sai</label>
+      <p>Câu 3: JavaScript là ngôn ngữ lập trình phổ biến.</p>
+      <label><input type="radio" name="group1.3" value="true"> Đúng</label>
+      <label><input type="radio" name="group1.3" value="false"> Sai</label>
+      <p>Câu 4: JavaScript là ngôn ngữ lập trình phổ biến.</p>
+      <label><input type="radio" name="group1.4" value="true"> Đúng</label>
+      <label><input type="radio" name="group1.4" value="false"> Sai</label>
+      <p>Câu 5: JavaScript là ngôn ngữ lập trình phổ biến.</p>
+      <label><input type="radio" name="group1.5" value="true"> Đúng</label>
+      <label><input type="radio" name="group1.5" value="false"> Sai</label>
+      <p>Câu 6: JavaScript là ngôn ngữ lập trình phổ biến.</p>
+      <label><input type="radio" name="group1.6" value="true"> Đúng</label>
+      <label><input type="radio" name="group1.6" value="false"> Sai</label>
+      <p>Câu 7: JavaScript là ngôn ngữ lập trình phổ biến.</p>
+      <label><input type="radio" name="group1.7" value="true"> Đúng</label>
+      <label><input type="radio" name="group1.7" value="false"> Sai</label>
+      <p>Câu 8: JavaScript là ngôn ngữ lập trình phổ biến.</p>
+      <label><input type="radio" name="group1.8" value="true"> Đúng</label>
+      <label><input type="radio" name="group1.8" value="false"> Sai</label>
+      <p>Câu 9: JavaScript là ngôn ngữ lập trình phổ biến.</p>
+      <label><input type="radio" name="group1.9" value="true"> Đúng</label>
+      <label><input type="radio" name="group1.9" value="false"> Sai</label>
+      <p>Câu 10: JavaScript là ngôn ngữ lập trình phổ biến.</p>
+      <label><input type="radio" name="group1.10" value="true"> Đúng</label>
+      <label><input type="radio" name="group1.10" value="false"> Sai</label>
+    </div>
+    <div>
+      <h2>Phần 2 : Chọn một trong bốn đáp án</h2>
+      <p>Câu 1: 1+1= </p>
+      <label><input type="radio" name="group2.1" value="A"> A. 1</label>
+      <label><input type="radio" name="group2.1" value="B"> B. 2</label>
+      <label><input type="radio" name="group2.1" value="C"> C. 3</label>
+      <label><input type="radio" name="group2.1" value="D"> D. 4</label>
+      <p>Câu 2: 1+1= </p>
+      <label><input type="radio" name="group2.2" value="A"> A. 1</label>
+      <label><input type="radio" name="group2.2" value="B"> B. 2</label>
+      <label><input type="radio" name="group2.2" value="C"> C. 3</label>
+      <label><input type="radio" name="group2.2" value="D"> D. 4</label>
+      <p>Câu 3: 1+1= </p>
+      <label><input type="radio" name="group2.3" value="A"> A. 1</label>
+      <label><input type="radio" name="group2.3" value="B"> B. 2</label>
+      <label><input type="radio" name="group2.3" value="C"> C. 3</label>
+      <label><input type="radio" name="group2.3" value="D"> D. 4</label>
+      <p>Câu 4: 1+1= </p>
+      <label><input type="radio" name="group2.4" value="A"> A. 1</label>
+      <label><input type="radio" name="group2.4" value="B"> B. 2</label>
+      <label><input type="radio" name="group2.4" value="C"> C. 3</label>
+      <label><input type="radio" name="group2.4" value="D"> D. 4</label>
+      <p>Câu 5: 1+1= </p>
+      <label><input type="radio" name="group2.5" value="A"> A. 1</label>
+      <label><input type="radio" name="group2.5" value="B"> B. 2</label>
+      <label><input type="radio" name="group2.5" value="C"> C. 3</label>
+      <label><input type="radio" name="group2.5" value="D"> D. 4</label>
+      <p>Câu 6: 1+1= </p>
+      <label><input type="radio" name="group2.6" value="A"> A. 1</label>
+      <label><input type="radio" name="group2.6" value="B"> B. 2</label>
+      <label><input type="radio" name="group2.6" value="C"> C. 3</label>
+      <label><input type="radio" name="group2.6" value="D"> D. 4</label>
+      <p>Câu 7: 1+1= </p>
+      <label><input type="radio" name="group2.7" value="A"> A. 1</label>
+      <label><input type="radio" name="group2.7" value="B"> B. 2</label>
+      <label><input type="radio" name="group2.7" value="C"> C. 3</label>
+      <label><input type="radio" name="group2.7" value="D"> D. 4</label>
+      <p>Câu 8: 1+1= </p>
+      <label><input type="radio" name="group2.8" value="A"> A. 1</label>
+      <label><input type="radio" name="group2.8" value="B"> B. 2</label>
+      <label><input type="radio" name="group2.8" value="C"> C. 3</label>
+      <label><input type="radio" name="group2.8" value="D"> D. 4</label>
+      <p>Câu 9: 1+1= </p>
+      <label><input type="radio" name="group2.9" value="A"> A. 1</label>
+      <label><input type="radio" name="group2.9" value="B"> B. 2</label>
+      <label><input type="radio" name="group2.9" value="C"> C. 3</label>
+      <label><input type="radio" name="group2.9" value="D"> D. 4</label>
+      <p>Câu 10: 1+1= </p>
+      <label><input type="radio" name="group2.10" value="A"> A. 1</label>
+      <label><input type="radio" name="group2.10" value="B"> B. 2</label>
+      <label><input type="radio" name="group2.10" value="C"> C. 3</label>
+      <label><input type="radio" name="group2.10" value="D"> D. 4</label>
+    </div>
+    <div>
+      <h2>Phần 3: Chọn nhiều đáp án</h2>
+      <p>Câu 1: Chọn các phép toán đúng:</p>
+      <label><input type="checkbox" name="group3.1" value="A"> A. 1+1=2</label>
+      <label><input type="checkbox" name="group3.1" value="B"> B. 1+1=3</label>
+      <label><input type="checkbox" name="group3.1" value="C"> C. 2+2=3</label>
+      <label><input type="checkbox" name="group3.1" value="D"> D. 2+2=4</label>
+      <p>Câu 2: Chọn các phép toán đúng:</p>
+      <label><input type="checkbox" name="group3.2" value="A"> A. 1+1=2</label>
+      <label><input type="checkbox" name="group3.2" value="B"> B. 1+1=3</label>
+      <label><input type="checkbox" name="group3.2" value="C"> C. 2+2=3</label>
+      <label><input type="checkbox" name="group3.2" value="D"> D. 2+2=4</label>
+      <p>Câu 3: Chọn các phép toán đúng:</p>
+      <label><input type="checkbox" name="group3.3" value="A"> A. 1+1=2</label>
+      <label><input type="checkbox" name="group3.3" value="B"> B. 1+1=3</label>
+      <label><input type="checkbox" name="group3.3" value="C"> C. 2+2=3</label>
+      <label><input type="checkbox" name="group3.3" value="D"> D. 2+2=4</label>
+      <p>Câu 4: Chọn các phép toán đúng:</p>
+      <label><input type="checkbox" name="group3.4" value="A"> A. 1+1=2</label>
+      <label><input type="checkbox" name="group3.4" value="B"> B. 1+1=3</label>
+      <label><input type="checkbox" name="group3.4" value="C"> C. 2+2=3</label>
+      <label><input type="checkbox" name="group3.4" value="D"> D. 2+2=4</label>
+      <p>Câu 5: Chọn các phép toán đúng:</p>
+      <label><input type="checkbox" name="group3.5" value="A"> A. 1+1=2</label>
+      <label><input type="checkbox" name="group3.5" value="B"> B. 1+1=3</label>
+      <label><input type="checkbox" name="group3.5" value="C"> C. 2+2=3</label>
+      <label><input type="checkbox" name="group3.5" value="D"> D. 2+2=4</label>
+      <p>Câu 6: Chọn các phép toán đúng:</p>
+      <label><input type="checkbox" name="group3.6" value="A"> A. 1+1=2</label>
+      <label><input type="checkbox" name="group3.6" value="B"> B. 1+1=3</label>
+      <label><input type="checkbox" name="group3.6" value="C"> C. 2+2=3</label>
+      <label><input type="checkbox" name="group3.6" value="D"> D. 2+2=4</label>
+      <p>Câu 7: Chọn các phép toán đúng:</p>
+      <label><input type="checkbox" name="group3.7" value="A"> A. 1+1=2</label>
+      <label><input type="checkbox" name="group3.7" value="B"> B. 1+1=3</label>
+      <label><input type="checkbox" name="group3.7" value="C"> C. 2+2=3</label>
+      <label><input type="checkbox" name="group3.7" value="D"> D. 2+2=4</label>
+      <p>Câu 8: Chọn các phép toán đúng:</p>
+      <label><input type="checkbox" name="group3.8" value="A"> A. 1+1=2</label>
+      <label><input type="checkbox" name="group3.8" value="B"> B. 1+1=3</label>
+      <label><input type="checkbox" name="group3.8" value="C"> C. 2+2=3</label>
+      <label><input type="checkbox" name="group3.8" value="D"> D. 2+2=4</label>
+      <p>Câu 9: Chọn các phép toán đúng:</p>
+      <label><input type="checkbox" name="group3.9" value="A"> A. 1+1=2</label>
+      <label><input type="checkbox" name="group3.9" value="B"> B. 1+1=3</label>
+      <label><input type="checkbox" name="group3.9" value="C"> C. 2+2=3</label>
+      <label><input type="checkbox" name="group3.9" value="D"> D. 2+2=4</label>
+      <p>Câu 10: Chọn các phép toán đúng:</p>
+      <label><input type="checkbox" name="group3.10" value="A"> A. 1+1=2</label>
+      <label><input type="checkbox" name="group3.10" value="B"> B. 1+1=3</label>
+      <label><input type="checkbox" name="group3.10" value="C"> C. 2+2=3</label>
+      <label><input type="checkbox" name="group3.10" value="D"> D. 2+2=4</label>
+    </div>
+    <div>
+      <h2>Phần 4: Trae lời câu hỏi tự luận</h2>
+      <p>Câu 1: Kể tên 10 loại gia cầm:</p>
+      <label for="openEndedAnswer">Câu trả lời:</label>
+      <textarea id="openEndedAnswer" rows="4" cols="50"></textarea>
+      <p>Câu 2: Kể tên 10 loại gia cầm:</p>
+      <label for="openEndedAnswer">Câu trả lời:</label>
+      <textarea id="openEndedAnswer" rows="4" cols="50"></textarea>
+      <p>Câu 3: Kể tên 10 loại gia cầm:</p>
+      <label for="openEndedAnswer">Câu trả lời:</label>
+      <textarea id="openEndedAnswer" rows="4" cols="50"></textarea>
+      <p>Câu 4: Kể tên 10 loại gia cầm:</p>
+      <label for="openEndedAnswer">Câu trả lời:</label>
+      <textarea id="openEndedAnswer" rows="4" cols="50"></textarea>
+      <p>Câu 5: Kể tên 10 loại gia cầm:</p>
+      <label for="openEndedAnswer">Câu trả lời:</label>
+      <textarea id="openEndedAnswer" rows="4" cols="50"></textarea>
+      <p>Câu 6: Kể tên 10 loại gia cầm:</p>
+      <label for="openEndedAnswer">Câu trả lời:</label>
+      <textarea id="openEndedAnswer" rows="4" cols="50"></textarea>
+      <p>Câu 7: Kể tên 10 loại gia cầm:</p>
+      <label for="openEndedAnswer">Câu trả lời:</label>
+      <textarea id="openEndedAnswer" rows="4" cols="50"></textarea>
+      <p>Câu 8: Kể tên 10 loại gia cầm:</p>
+      <label for="openEndedAnswer">Câu trả lời:</label>
+      <textarea id="openEndedAnswer" rows="4" cols="50"></textarea>
+      <p>Câu 9: Kể tên 10 loại gia cầm:</p>
+      <label for="openEndedAnswer">Câu trả lời:</label>
+      <textarea id="openEndedAnswer" rows="4" cols="50"></textarea>
+      <p>Câu 10: Kể tên 10 loại gia cầm:</p>
+      <label for="openEndedAnswer">Câu trả lời:</label>
+      <textarea id="openEndedAnswer" rows="4" cols="50"></textarea>
+    </div>
+    
+
+    <!-- Nút để submit bài làm -->
+    <button type="button" onclick="submitAnswers()">Submit</button>
+  </div>
+
+  <!-- Kết quả bài làm -->
+  <div id="result" style="display: none;">
+    <h2>Kết Quả Bài Làm</h2>
+    <p id="score"></p>
+    <button type="button" ><a href="index.html">Thoát</a></button>
+  </div>
+
+  <script>
+    function showQuestions() {
+      document.getElementById("questions").style.display = "block";
+    }
+
+    function submitAnswers() {
+      // Lấy giá trị câu trả lời từ người dùng và tính điểm
+      // Ví dụ: đếm số câu trả lời đúng và hiển thị điểm
+      var score = 0;
+      // Thực hiện logic tính điểm dựa trên câu trả lời
+
+      // Hiển thị kết quả
+      document.getElementById("result").style.display = "block";
+      document.getElementById("score").innerHTML = "Điểm của bạn là: " + score;
+    }
+    document.getElementById('userInfoForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // Ẩn form nhập thông tin
+      this.style.display = 'none';
+      showQuestions();
+    });
+  </script>
+</body>
+</html>
